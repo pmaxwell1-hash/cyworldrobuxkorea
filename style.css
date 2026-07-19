@@ -1,0 +1,562 @@
+/* ============================================
+   로벅스 코리아 — 싸이월드 감성
+   굴림체 / 하늘색-분홍 / 800px 고정
+   ============================================ */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "굴림", "굴림체", Gulim, "돋움", Dotum, sans-serif;
+  font-size: 12px;
+  background: #c0e4ff url('') repeat;
+  background-image:
+    radial-gradient(circle, #b8d8f8 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* 반짝이 별 */
+#stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#wrap {
+  width: 800px;
+  margin: 20px auto 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============ 상단 타이틀 바 ============ */
+#top-bar {
+  background: linear-gradient(90deg, #ff99cc, #ff66aa, #ff99cc);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 0;
+  border: 2px solid #ff66aa;
+  border-bottom: none;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #cc3366;
+}
+
+.top-star {
+  color: #ffe04b;
+  font-size: 14px;
+}
+
+/* ============ 네비 바 ============ */
+#nav-bar {
+  background: linear-gradient(90deg, #99ccff, #66aaff, #99ccff);
+  border: 2px solid #66aaff;
+  border-bottom: none;
+  padding: 5px 12px;
+  text-align: center;
+  font-size: 11px;
+}
+
+#nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #3377cc;
+}
+
+#nav-bar a:hover {
+  color: #ffe04b;
+  text-decoration: underline;
+}
+
+/* ============ 메인 테이블 ============ */
+#main-table {
+  width: 100%;
+  border: 2px solid #99aacc;
+  border-collapse: collapse;
+  background: #f0f8ff;
+}
+
+/* ============ 사이드바 ============ */
+#sidebar {
+  width: 180px;
+  vertical-align: top;
+  padding: 8px;
+  background: #e8f4ff;
+  border-right: 2px solid #99bbdd;
+}
+
+.side-box {
+  border: 1px solid #aaccee;
+  background: #fff;
+}
+
+.side-title {
+  background: linear-gradient(90deg, #6699cc, #99bbdd);
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 6px;
+  text-shadow: 1px 1px 0 #336699;
+}
+
+.side-content {
+  padding: 6px 8px;
+  font-size: 11px;
+  text-align: center;
+  color: #555;
+}
+
+.profile-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #336699;
+  margin: 4px 0 2px;
+}
+
+.profile-sub {
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.side-hr {
+  border: none;
+  border-top: 1px dashed #ccc;
+  margin: 4px 0;
+}
+
+.mini-info {
+  font-size: 10px;
+  color: #888;
+  text-align: left;
+}
+
+.mini-val {
+  font-size: 11px;
+  font-weight: bold;
+  color: #336699;
+  text-align: left;
+  word-break: break-all;
+}
+
+.side-link {
+  text-align: left;
+  padding: 2px 0;
+}
+
+.side-link a {
+  color: #336699;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.side-link a:hover {
+  text-decoration: underline;
+  color: #ff66aa;
+}
+
+/* ============ 메인 콘텐츠 ============ */
+#content {
+  vertical-align: top;
+  padding: 8px 10px;
+  background: #fff;
+}
+
+/* 메인 배너 */
+#main-banner {
+  background: linear-gradient(135deg, #ffe0f0, #e0f0ff, #ffe0f0);
+  border: 2px solid #ffaacc;
+  padding: 14px 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.banner-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #cc3366;
+  text-shadow: 1px 1px 0 #ffaacc;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.banner-sub {
+  font-size: 13px;
+  font-weight: bold;
+  color: #3366cc;
+  margin-bottom: 6px;
+}
+
+.banner-desc {
+  font-size: 11px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* 공지 박스 */
+.notice-box {
+  background: #fffbe0;
+  border: 1px solid #ffcc33;
+  border-left: 4px solid #ff9900;
+  padding: 8px 10px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.notice-box strong {
+  color: #cc3300;
+  font-size: 12px;
+}
+
+.notice-icon {
+  color: #ff6600;
+}
+
+/* 콘텐츠 박스 */
+.content-box {
+  border: 1px solid #aaccee;
+  margin-bottom: 10px;
+}
+
+.content-title {
+  background: linear-gradient(90deg, #ff99cc, #ffbbdd);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 8px;
+  text-shadow: 1px 1px 0 #cc3366;
+}
+
+/* 상품 테이블 */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.product-thead th {
+  background: linear-gradient(90deg, #ddeeff, #eef6ff);
+  border: 1px solid #99bbdd;
+  padding: 5px 8px;
+  font-weight: bold;
+  color: #336699;
+  text-align: center;
+}
+
+.product-row td {
+  border: 1px solid #cce0f0;
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+.product-row:nth-child(even) td {
+  background: #f5fbff;
+}
+
+.product-row:hover td {
+  background: #ffe8f4;
+}
+
+.product-row.hot td:first-child {
+  color: #cc3300;
+  font-weight: bold;
+}
+
+.product-row.best td:first-child {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.badge-hot {
+  background: #ff4444;
+  color: #fff;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 1px 4px;
+  margin-right: 3px;
+}
+
+.badge-best {
+  background: #3399ff;
+  color: #fff;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 1px 4px;
+  margin-right: 3px;
+}
+
+.price-cell {
+  text-align: right;
+  font-weight: bold;
+  color: #cc3366;
+}
+
+.btn-buy {
+  background: linear-gradient(#ff99cc, #ff66aa);
+  color: #fff;
+  border: 1px solid #ff4499;
+  font-family: "굴림", Gulim, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background: linear-gradient(#ff66aa, #ff3388);
+}
+
+.table-note {
+  font-size: 10px;
+  color: #888;
+  padding: 4px 8px 6px;
+}
+
+/* STEP 테이블 */
+.step-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  padding: 6px 8px;
+  font-size: 11px;
+}
+
+.step-num {
+  background: linear-gradient(90deg, #6699cc, #99bbdd);
+  color: #fff;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 5px 8px;
+  white-space: nowrap;
+  vertical-align: top;
+  text-shadow: 1px 1px 0 #336699;
+  border: 1px solid #6699cc;
+  width: 60px;
+  text-align: center;
+}
+
+.step-text {
+  border: 1px solid #cce0f0;
+  padding: 5px 10px;
+  background: #f8fbff;
+  line-height: 1.8;
+  color: #444;
+  vertical-align: top;
+}
+
+/* 정보 행 */
+.info-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #eef6ff;
+  border: 1px solid #99ccff;
+  padding: 3px 8px;
+  margin: 4px 0;
+}
+
+.info-label {
+  font-size: 10px;
+  font-weight: bold;
+  color: #3366cc;
+}
+
+.info-val {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-copy-sm {
+  background: linear-gradient(#66aaff, #3388ff);
+  color: #fff;
+  border: 1px solid #3388ff;
+  font-family: "굴림", Gulim, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 7px;
+  cursor: pointer;
+}
+
+.btn-copy-sm:hover {
+  background: linear-gradient(#3388ff, #1166dd);
+}
+
+/* FAQ */
+.faq-item {
+  border-bottom: 1px dashed #cce0f0;
+}
+
+.faq-q {
+  padding: 7px 10px;
+  font-size: 11px;
+  color: #336699;
+  font-weight: bold;
+  cursor: pointer;
+  background: #f5fbff;
+}
+
+.faq-q:hover {
+  background: #ffe0f0;
+  color: #cc3366;
+}
+
+.faq-a {
+  display: none;
+  padding: 6px 14px;
+  font-size: 11px;
+  color: #555;
+  background: #fffbf0;
+  line-height: 1.8;
+  border-top: 1px dashed #ffcc99;
+}
+
+.faq-item.open .faq-a {
+  display: block;
+}
+
+/* 문의 테이블 */
+.contact-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 3px;
+  padding: 6px 8px;
+  font-size: 11px;
+}
+
+.ct-label {
+  background: #ddeeff;
+  border: 1px solid #99bbdd;
+  font-weight: bold;
+  color: #336699;
+  padding: 5px 10px;
+  width: 100px;
+}
+
+.ct-val {
+  border: 1px solid #cce0f0;
+  background: #f8fbff;
+  font-weight: bold;
+  color: #333;
+  padding: 5px 10px;
+}
+
+/* ============ 푸터 ============ */
+#footer {
+  background: linear-gradient(90deg, #ff99cc, #99ccff, #ff99cc);
+  border: 2px solid #99aacc;
+  border-top: none;
+  text-align: center;
+  padding: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 0 #6688aa;
+}
+
+/* ============ 모달 ============ */
+#modal-bg {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 9000;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-bg.active {
+  display: flex;
+}
+
+#modal-box {
+  background: #fff;
+  border: 3px solid #ff99cc;
+  padding: 16px 20px;
+  width: 340px;
+  font-family: "굴림", Gulim, sans-serif;
+  font-size: 12px;
+  position: relative;
+  box-shadow: 4px 4px 0 #ffaacc;
+}
+
+.modal-title {
+  background: linear-gradient(90deg, #ff99cc, #ffbbdd);
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 8px;
+  margin: -16px -20px 12px;
+  text-shadow: 1px 1px 0 #cc3366;
+}
+
+#modal-info {
+  font-size: 13px;
+  font-weight: bold;
+  color: #cc3366;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.btn-modal-close {
+  display: block;
+  margin: 12px auto 0;
+  background: linear-gradient(#ff99cc, #ff66aa);
+  color: #fff;
+  border: 1px solid #ff4499;
+  font-family: "굴림", Gulim, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 20px;
+  cursor: pointer;
+}
+
+.btn-modal-close:hover {
+  background: linear-gradient(#ff66aa, #ff3388);
+}
+
+/* ============ 토스트 ============ */
+#toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #336699;
+  color: #fff;
+  font-family: "굴림", Gulim, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 7px 20px;
+  border: 2px solid #6699cc;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ============ 반짝이 별 (JS로 추가) ============ */
+.star-item {
+  position: absolute;
+  color: #ffe04b;
+  font-size: 12px;
+  animation: twinkle 1.5s infinite alternate;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.2; transform: scale(0.8); }
+  to   { opacity: 1;   transform: scale(1.2); }
+}

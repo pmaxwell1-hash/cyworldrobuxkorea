@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>로벅스 코리아 :: Robux Korea</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- 반짝이 별 배경 -->
+<div id="stars"></div>
+
+<!-- 전체 래퍼 -->
+<div id="wrap">
+
+  <!-- 상단 타이틀 바 -->
+  <div id="top-bar">
+    <span class="top-star">&#9733;</span>
+    &#32;로&#32;벅&#32;스&#32;&#32;코&#32;리&#32;아&#32;
+    <span class="top-star">&#9733;</span>
+    &nbsp;&nbsp;
+    <span style="font-size:10px; color:#ffddee;">:: Robux Korea ::</span>
+  </div>
+
+  <!-- 네비 메뉴 -->
+  <div id="nav-bar">
+    <a href="#products">&#9654; 상품목록</a>
+    &nbsp;|&nbsp;
+    <a href="#how-to-buy">&#9654; 구매방법</a>
+    &nbsp;|&nbsp;
+    <a href="#faq">&#9654; 자주묻는질문</a>
+    &nbsp;|&nbsp;
+    <a href="#contact">&#9654; 문의하기</a>
+  </div>
+
+  <!-- 메인 레이아웃 -->
+  <table id="main-table" cellspacing="0" cellpadding="0">
+    <tr>
+
+      <!-- 왼쪽 사이드바 -->
+      <td id="sidebar">
+
+        <div class="side-box">
+          <div class="side-title">&#9733; 운영자 정보</div>
+          <div class="side-content">
+            <img src="https://i.ibb.co/cctSBkDp/file-00000000dec08207bb57e0b0965dbff4.webp" alt="프로필" onerror="this.style.display='none'" />
+            <div class="profile-name">robuxkorea</div>
+            <div class="profile-sub">로벅스 코리아 운영자</div>
+            <hr class="side-hr" />
+            <div class="mini-info">디스코드 ID</div>
+            <div class="mini-val">robuxkorea</div>
+            <div class="mini-info" style="margin-top:6px;">입금은행</div>
+            <div class="mini-val">우리은행</div>
+            <div class="mini-info" style="margin-top:6px;">계좌번호</div>
+            <div class="mini-val">2965-0207-718501</div>
+          </div>
+        </div>
+
+        <div class="side-box" style="margin-top:8px;">
+          <div class="side-title">&#9733; 바로가기</div>
+          <div class="side-content">
+            <div class="side-link"><a href="#products">&#9654; 상품목록</a></div>
+            <div class="side-link"><a href="#how-to-buy">&#9654; 구매방법</a></div>
+            <div class="side-link"><a href="#faq">&#9654; FAQ</a></div>
+            <div class="side-link"><a href="#contact">&#9654; 문의하기</a></div>
+          </div>
+        </div>
+
+        <div class="side-box" style="margin-top:8px;">
+          <div class="side-title">&#9733; 공지사항</div>
+          <div class="side-content" style="font-size:10px; line-height:1.7; color:#555;">
+            &#9829; 사기 아닙니다!<br/>
+            재고 미리 없어서<br/>
+            주문후 구매방식~<br/>
+            믿고 이용해줘요^^
+          </div>
+        </div>
+
+      </td>
+
+      <!-- 메인 콘텐츠 -->
+      <td id="content">
+
+        <!-- 메인 배너 -->
+        <div id="main-banner">
+          <div class="banner-title">&#9733; 로벅스 코리아에 오신걸 환영합니다 &#9733;</div>
+          <div class="banner-sub">로벅스 코리아에 오신걸 환영합니다 &#10084;</div>
+          <div class="banner-desc">
+            빠른 로벅스 충전~ 계좌입금 후 디스코드로 문의해주세요!<br/>
+            <span style="color:#ff99bb;">&#9829; 선입금 방식이지만 사기 절대 아님!! &#9829;</span>
+          </div>
+        </div>
+
+        <!-- 사기아님 공지 -->
+        <div class="notice-box">
+          <span class="notice-icon">&#9888;</span>
+          <strong>[필독] 사기 아닙니다!!</strong><br/>
+          저희 샵은 미리 살 돈이 없어서 주문이 들어오면 그때 구매해서 지급하는 방식으로 운영됩니다.
+          그래서 선입금을 받고 있어요. 입금 확인되면 바로바로 지급해드립니다!!
+          걱정 말고 이용해주세요 &#10084;
+        </div>
+
+        <!-- 상품 목록 -->
+        <a name="products"></a>
+        <div class="content-box">
+          <div class="content-title">&#9733; 상품 목록</div>
+          <table class="product-table" cellspacing="0" cellpadding="0">
+            <tr class="product-thead">
+              <th>상품명</th>
+              <th>가격</th>
+              <th>구매</th>
+            </tr>
+            <tr class="product-row hot">
+              <td><span class="badge-hot">HOT</span> 1,000 Robux <span style="color:#888; font-size:10px;">(800 + 보너스 200)</span></td>
+              <td class="price-cell">$5.00</td>
+              <td><button class="btn-buy" onclick="openOrder(1000, '5.00')">구매하기</button></td>
+            </tr>
+            <tr class="product-row">
+              <td>2,000 Robux <span style="color:#888; font-size:10px;">(1700 + 보너스 300)</span></td>
+              <td class="price-cell">$15.00</td>
+              <td><button class="btn-buy" onclick="openOrder(2000, '15.00')">구매하기</button></td>
+            </tr>
+            <tr class="product-row best">
+              <td><span class="badge-best">BEST</span> 5,250 Robux <span style="color:#888; font-size:10px;">(4500 + 보너스 750)</span></td>
+              <td class="price-cell">$30.00</td>
+              <td><button class="btn-buy" onclick="openOrder(5250, '30.00')">구매하기</button></td>
+            </tr>
+            <tr class="product-row">
+              <td>11,000 Robux <span style="color:#888; font-size:10px;">(10000 + 보너스 1000)</span></td>
+              <td class="price-cell">$70.00</td>
+              <td><button class="btn-buy" onclick="openOrder(11000, '70.00')">구매하기</button></td>
+            </tr>
+            <tr class="product-row">
+              <td>24,000 Robux <span style="color:#888; font-size:10px;">(22500 + 보너스 1500)</span></td>
+              <td class="price-cell">$145.00</td>
+              <td><button class="btn-buy" onclick="openOrder(24000, '145.00')">구매하기</button></td>
+            </tr>
+            <tr class="product-row">
+              <td>Roblox Premium <span style="color:#888; font-size:10px;">(월 $9.99 → 특가)</span></td>
+              <td class="price-cell">$5.00</td>
+              <td><button class="btn-buy" onclick="openOrder('Premium', '5.00')">구매하기</button></td>
+            </tr>
+          </table>
+          <p class="table-note">* 입금 후 디스코드 <b>robuxkorea</b> 로 문의해주세요!</p>
+        </div>
+
+        <!-- 구매 방법 -->
+        <a name="how-to-buy"></a>
+        <div class="content-box">
+          <div class="content-title">&#9733; 구매 방법</div>
+          <table class="step-table" cellspacing="4" cellpadding="0">
+            <tr>
+              <td class="step-num">STEP 1</td>
+              <td class="step-text">상품 목록에서 원하는 로벅스 수량을 선택하세요.</td>
+            </tr>
+            <tr>
+              <td class="step-num">STEP 2</td>
+              <td class="step-text">
+                아래 계좌로 정확한 금액을 입금해주세요.<br/>
+                <div class="info-row">
+                  <span class="info-label">우리은행</span>
+                  <span class="info-val">2965-0207-718501</span>
+                  <button class="btn-copy-sm" onclick="copyAccount()">복사</button>
+                </div>
+                <span style="color:#cc3366; font-size:10px;">* 입금자명을 로블록스 닉네임으로 입력해주세요!</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="step-num">STEP 3</td>
+              <td class="step-text">
+                입금 후 디스코드로 문의해주세요.<br/>
+                <div class="info-row">
+                  <span class="info-label">Discord ID</span>
+                  <span class="info-val">robuxkorea</span>
+                  <button class="btn-copy-sm" onclick="copyDiscord()">복사</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="step-num">STEP 4</td>
+              <td class="step-text">입금 확인 후 로벅스를 빠르게 지급해드립니다!! &#10084;</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- FAQ -->
+        <a name="faq"></a>
+        <div class="content-box">
+          <div class="content-title">&#9733; 자주 묻는 질문 (FAQ)</div>
+
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">&#9654; 사기 아닌가요? 왜 선입금이에요?</div>
+            <div class="faq-a">
+              사기 아닙니다!! &#10084; 미리 살 돈이 없어서 주문이 들어오면 그때 직접 구매해서 지급하는 방식이에요.
+              입금 확인 즉시 처리해드리고 보통 10~30분 이내에 완료됩니다!
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">&#9654; 지급까지 얼마나 걸려요?</div>
+            <div class="faq-a">
+              입금 확인 후 보통 10~30분 안에 지급됩니다. 오래 걸리면 디스코드로 먼저 문의해주세요~
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">&#9654; 디스코드 없이 구매 가능한가요?</div>
+            <div class="faq-a">
+              현재는 디스코드 문의만 가능합니다. ID <b>robuxkorea</b> 로 친추 후 문의해주세요!
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaq(this)">
+            <div class="faq-q">&#9654; 환불 되나요?</div>
+            <div class="faq-a">
+              지급 전이라면 전액 환불 가능합니다. 지급 후에는 로블록스 정책상 취소가 불가능하니 신중하게 구매해주세요!
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 문의 -->
+        <a name="contact"></a>
+        <div class="content-box">
+          <div class="content-title">&#9733; 구매 문의</div>
+          <table class="contact-table" cellspacing="4" cellpadding="0">
+            <tr>
+              <td class="ct-label">Discord ID</td>
+              <td class="ct-val">robuxkorea</td>
+              <td><button class="btn-copy-sm" onclick="copyDiscord()">복사</button></td>
+            </tr>
+            <tr>
+              <td class="ct-label">우리은행 계좌</td>
+              <td class="ct-val">2965-0207-718501</td>
+              <td><button class="btn-copy-sm" onclick="copyAccount()">복사</button></td>
+            </tr>
+          </table>
+          <p class="table-note" style="margin-top:8px;">궁금한 점은 디스코드로 편하게 문의해주세요 &#10084;</p>
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+  <!-- 푸터 -->
+  <div id="footer">
+    &#9733; 로벅스 코리아 | Robux Korea &#9733;
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <span style="font-size:9px; color:#aaa;">본 사이트는 Roblox Corporation과 관계없는 개인 판매 채널입니다.</span>
+  </div>
+
+</div><!-- /wrap -->
+
+<!-- 구매 모달 -->
+<div id="modal-bg" onclick="closeModal(event)">
+  <div id="modal-box">
+    <div class="modal-title">&#9733; 구매 안내</div>
+    <div id="modal-info"></div>
+    <hr style="border:1px dashed #ffaacc; margin:8px 0;"/>
+    <p style="font-size:11px; color:#555; margin-bottom:4px;">&#9312; 아래 계좌로 입금해주세요</p>
+    <div class="info-row">
+      <span class="info-label">우리은행</span>
+      <span class="info-val">2965-0207-718501</span>
+      <button class="btn-copy-sm" onclick="copyAccount()">복사</button>
+    </div>
+    <p style="font-size:11px; color:#555; margin:8px 0 4px;">&#9313; 입금 후 디스코드 문의</p>
+    <div class="info-row">
+      <span class="info-label">Discord ID</span>
+      <span class="info-val">robuxkorea</span>
+      <button class="btn-copy-sm" onclick="copyDiscord()">복사</button>
+    </div>
+    <p style="font-size:10px; color:#cc3366; margin-top:10px;">* 입금자명은 로블록스 닉네임으로 입력해주세요!</p>
+    <button class="btn-modal-close" onclick="document.getElementById('modal-bg').style.display='none'">닫기</button>
+  </div>
+</div>
+
+<!-- 토스트 -->
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
